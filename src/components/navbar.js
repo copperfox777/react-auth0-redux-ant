@@ -9,7 +9,7 @@ export default function Navbar({ title}) {
   const subtitle = isAuthenticated ? user?.name : "Not signed in";
   return (
     <PageHeader
-      onBack={() => history.goBack()}
+      onBack={() => history.push('/')}
       title={title}
       subTitle={subtitle}
       // extra={[
