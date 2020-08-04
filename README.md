@@ -1,8 +1,7 @@
-# React-Redux App with Auth0, data fetching and 
+In the project directory, you should run:
 
-## Installation
+#### `yarn`
+#### `yarn start`
 
-In app folder 
-### yarn
-- `yarn`
-- `yarn start`
+or 
+#### `npm install && npm run start`
