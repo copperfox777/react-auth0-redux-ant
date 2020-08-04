@@ -125,7 +125,8 @@ function Private() {
   const save = async id => {
     try {
       const row = await form.validateFields();
-      dispatch(contactUpdate({id:id,...row}));
+      console.log({id,...row});
+      dispatch(contactUpdate({id,...row}));
       setEditingKey('');
     } catch (errInfo) {
       console.log('Validate Failed:', errInfo);

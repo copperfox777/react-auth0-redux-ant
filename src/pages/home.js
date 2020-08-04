@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function HomePage() {
   const {
-    loginWithRedirect,
+    loginWithPopup,
     logout,
   } = useAuth0();
   
@@ -19,7 +19,7 @@ function HomePage() {
         If you are logged in, you can see some user info at <Link to="/about">about</Link> page.
         <br/>
           <li> <Link to="/">Home</Link> </li>
-          <li> <a href="" onClick={loginWithRedirect}> Sign In </a> </li>
+          <li> <a href="" onClick={loginWithPopup}> Sign In </a> </li>
           <li> <a href="" onClick={() => logout({ returnTo: "http://localhost:3000" })} > Sign Out </a> </li> 
           <li> <Link to="/about">About(public)</Link> </li>
           <li> <Link to="/private">Contacts (private) </Link> </li>
